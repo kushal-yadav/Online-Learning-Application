@@ -1,0 +1,62 @@
+	TextView tv1=(TextView)findViewById(R.id.tv1); 
+		File f = getBaseContext().getFileStreamPath("mydata.txt");
+		if(f.exists()) {
+		try {
+		FileInputStream fis= openFileInput("mydata.txt");
+		int c;
+	    String temp = "";
+		while( (c = fis.read()) >0){
+		temp += Character.toString((char) c);
+		}
+
+		tv1.setText(temp);
+        Toast.makeText(getBaseContext(),"file read",Toast.LENGTH_SHORT).show();
+		}
+		catch(Exception w){}
+		
+		};
+----------------------------------------
+<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="18dp"
+        android:text="Courses Selected"
+        android:textSize="25sp" />
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        
+        />
+-------------------------------------------------------------------------------------
+		final ListView lv = (ListView) findViewById(R.id.lv1);
+		Button bt1=(Button)findViewById(R.id.bt1);
+
+		String [] stars = getResources().getStringArray(R.array.items);
+		
+		final ArrayAdapter<String> adapter = new ArrayAdapter<String>(getBaseContext(), android.R.layout.simple_list_item_multiple_choice, stars);
+		lv.setChoiceMode(ListView.CHOICE_MODE_MULTIPLE);
+		lv.setAdapter(adapter);
+		bt1.setOnClickListener(new View.OnClickListener() {
+			
+			public void onClick(View v) {
+			Intent c=new Intent("Checkout");
+			startActivity(c);
+			SparseBooleanArray check = lv.getCheckedItemPositions();
+			ArrayList<String> aa = new ArrayList<String>(); 
+		
+			for (int i = 0; i < check.size(); i++)
+			{ int pos = check.keyAt(i); if (check.valueAt(i))
+			{ aa.add(adapter.getItem(pos)); } }
+		int n=lv.getCheckedItemCount(); 
+		String f = "Mydata.txt"; FileOutputStream fout = null; 
+		try { fout = openFileOutput(f, Context.MODE_PRIVATE); 
+		OutputStreamWriter osw = new OutputStreamWriter(fout); 
+		for (int k = 0; k < aa.size(); k++) { osw.write(aa.get(k) + ","); } 
+		osw.close(); } 
+		catch(Exception w){}
+			}
+	});

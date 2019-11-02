@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".Confirmation" >
+
+  
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Course selected :"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_below="@id/tv3"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        />
+    <TextView
+        android:id="@+id/tv5"
+        android:layout_below="@id/tv4"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total Cost:"
+        android:textSize="20sp"
+        />
+    <TextView
+        android:id="@+id/tv6"
+        android:layout_alignTop="@id/tv5"
+        android:layout_marginLeft="150dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        />
+
+
+    <TextView
+        android:id="@+id/tv7"
+        android:layout_below="@id/tv6"
+        android:layout_marginTop="50dp"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Are you sure ?"
+        android:textColor="#ff0000"
+        android:textSize="35sp"
+        />
+
+    <Button
+        android:id="@+id/btn1"
+        android:layout_below="@id/tv7"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="50dp"
+        android:text="Yes"
+        android:textColor="#0000ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <Button
+        android:id="@+id/btn2"
+        android:layout_alignTop="@id/btn1"
+
+        android:layout_marginLeft="150dp"
+        android:text="No"
+        android:textColor="#0000ff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    
+
+</RelativeLayout>

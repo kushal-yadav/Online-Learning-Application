@@ -1,0 +1,80 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".HomepageActv"
+    android:background="#000000"
+>
+<TableLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableRow
+        android:id="@+id/tr1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">  
+    <ImageButton
+        android:id="@+id/ib1"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/android"
+        android:scaleType="fitXY" />
+    <TextView 
+        android:text="Android"
+        android:textColor="#ffffff"
+        android:textSize="25sp"/>
+</TableRow>
+
+<TableRow
+        android:id="@+id/tr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/ib2"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/java"
+        android:scaleType="fitXY" />
+    <TextView
+        android:text="Java"
+           android:textColor="#ffffff"
+        android:textSize="25sp" />
+</TableRow>
+
+<TableRow
+        android:id="@+id/tr3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">       
+    <ImageButton
+        android:id="@+id/ib3"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/oracle"
+        android:scaleType="fitXY" />
+    <TextView 
+        android:text="Oracle"
+           android:textColor="#ffffff"
+        android:textSize="25sp"/>
+</TableRow>
+
+<TableRow
+        android:id="@+id/tr4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <ImageButton
+        android:id="@+id/ib4"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp"
+        android:src="@drawable/php"
+        android:scaleType="fitXY" />
+    <TextView 
+        android:text="Php"
+           android:textColor="#ffffff"
+        android:textSize="25sp"/>
+</TableRow>
+</TableLayout>
+    
+</RelativeLayout>

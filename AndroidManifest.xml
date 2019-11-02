@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.online_learn_app"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo1"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.online_learn_app.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.online_learn_app.HomepageActv"
+            android:label="@string/title_activity_homepage_actv" >
+        <intent-filter>
+                <action android:name="Home" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.online_learn_app.AndroidActv"
+            android:label="@string/title_activity_android_actv" >
+        <intent-filter>
+                <action android:name="Android" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.online_learn_app.JavaActv"
+            android:label="@string/title_activity_java_actv" >
+        <intent-filter>
+                <action android:name="Java" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.online_learn_app.OracleActv"
+            android:label="@string/title_activity_oracle_actv" >
+        <intent-filter>
+                <action android:name="Oracle" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.online_learn_app.PhpActv"
+            android:label="@string/title_activity_php_actv" >
+        <intent-filter>
+                <action android:name="Php" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity
+            android:name="com.example.online_learn_app.Checkout"
+            android:label="@string/title_activity_checkout" >
+        <intent-filter>
+                <action android:name="Checkout" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+    
+        </activity>
+        
+        <activity
+            android:name="com.example.online_learn_app.Addtocart"
+            android:label="@string/title_activity_addtocart" >
+        <intent-filter>
+                <action android:name="Addcart" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+    
+        </activity>
+        
+        <activity
+            android:name="com.example.online_learn_app.Confirmation"
+            android:label="@string/title_activity_confirmation" >
+        </activity>
+        
+        <activity
+            android:name="com.example.online_learn_app.Thankyou"
+            android:label="@string/title_activity_thankyou" >
+         <intent-filter>
+                <action android:name="Thankyou" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+    
+        </activity>
+    </application>
+
+</manifest>
